@@ -1,0 +1,123 @@
+.ctn , .ctn_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    padding: 0.5vh 15vw;
+    background-color: rgba(236, 235, 235, 0.473);
+}
+.top , .bot{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 0.5vh 0.5vw;
+    
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.payment{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 4px;
+}
+.payment button{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid lightgray;
+    padding: 0.5vh 0vw;
+}
+.payment button:hover{
+    cursor: pointer;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.box{
+    padding: 0.5vh 0.5vw;
+    background-color: rgba(236, 235, 235, 0.664);
+}
+.box p{
+    font-size: 0.8rem;
+}
+.box p:nth-of-type(1){
+    color: red;
+}
+.sale{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.sale label{
+    font-weight: 500;
+}
+.textinput{
+    padding: 0.5vh 1vw;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(216, 213, 213);
+    border-radius: 6px;
+}
+.textinput:focus{
+    outline: none;
+}
+.textinput:focus::placeholder{
+    opacity: 1;
+}
+.sale div{
+    display: flex;
+    justify-content: space-between;
+}
+.sale div a{
+    font-size: 1rem;
+    color: rgb(218, 9, 9);
+    text-decoration: none;
+}
+.sale button{
+    background-color: rgb(223, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.8vh;
+    font-weight: 500;
+}
+.col2 , .col3 , .col4{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.ctn_2{
+     background-color: rgba(236, 235, 235, 0.747);
+     margin-top: 0;
+     padding: 2vh 7.5vw 6vh 7.5vw;
+}
+.grid_item{
+    display: flex;
+    flex-direction: column;
+}
+.grid_item div{
+    display: flex;
+    gap: 1vh; 
+}
+.grid_item div p{
+    font-size: 0.8rem;
+    border-right: 1px solid black;
+    padding: 0vh 0.3vw;
+}
+.grid_item div p:last-child{
+    border: none;
+}
+.footer_end{
+    color: gray;
+    text-align: center;
+}
