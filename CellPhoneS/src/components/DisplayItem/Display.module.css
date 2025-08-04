@@ -1,0 +1,84 @@
+.ctn{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_ctn{
+    display:flex;
+}
+.title{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.btn_ctn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 1vh 2vw;
+}
+.btn_ctn button{
+    background-color: rgb(235, 229, 229);
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 1vh 1vw;
+    text-wrap: nowrap;
+}
+.btn_ctn button:hover{
+    cursor: pointer;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0.2vh 0.3vw;
+    gap: 0.8vw;
+    margin-top: 2vh;
+}
+.all_on{
+    display: none;
+}
+@media only screen and (max-width: 640px){
+    .ctn{
+        width: 100vw;
+    }
+    .top{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .all_on{
+        display: block;
+    }
+    .title_ctn{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        margin-right: 10vw;
+        justify-content: space-between;
+        padding: 1vh 2vw;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .btn_ctn{
+        width: 100vw;
+        overflow-x: scroll;
+    }
+    .btn_ctn::-webkit-scrollbar{
+        display: none;
+    }
+    .btn_ctn button{
+        padding: 0.8vh 2vw;
+    }
+    .cards{
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        gap: 4vw;
+    }
+}
